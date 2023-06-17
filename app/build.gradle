@@ -2,6 +2,12 @@ plugins {
     id 'java'
 }
 
+compileJava {
+    options.release = 17
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
 group = 'hexlet.code'
 version = '1.0-SNAPSHOT'
 
